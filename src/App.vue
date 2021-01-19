@@ -70,6 +70,7 @@ export default {
         content: this.inputContent,
       });
       this.inputContent = '';
+      this.type = 'title'
     },
     loadComments() {
       this.isloaded = true;
@@ -98,7 +99,7 @@ export default {
       return this.inputContent.length < 4
     }
   },
-  components: { AppContentList, AppCommentList, AppButton, AppLoader },
+  components: { AppContentList, AppCommentList, AppButton, AppLoader},
 };
 </script>
 
